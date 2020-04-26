@@ -15,7 +15,6 @@ body {
 	height: 100%;
 	font-family: "Roboto", sans-serif;
 	-webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
 }
 
 h1,
@@ -551,7 +550,6 @@ Header section
 }
 
 .sb-cata-list li span {
-	float: right;
 	display: inline-block;
 	min-width: 25px;
 	height: 25px;
@@ -881,7 +879,7 @@ Footer section
  ---------------------*/
 
 .footer-section {
-	background: #000000;
+	background: #222222;
 	padding-top: 73px;
 }
 
