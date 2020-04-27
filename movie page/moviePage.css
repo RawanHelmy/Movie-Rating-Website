@@ -1,0 +1,60 @@
+.moviePage.container-fluid {
+  background-color: #1c1c1c;
+}
+body {
+  background-color: #1c1c1c;
+}
+.moviePage.container-fluid .card {
+  color: white;
+}
+.moviePage .card .card-header {
+  background-color: #1c1c1c;
+}
+.moviePage .card .card-body {
+  background-color: #1c1c1c;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.moviePage .card .card-header-padding {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.moviePage .card .card-footer {
+  background-color: #1c1c1c;
+}
+
+.moviePage .card .jumbotron {
+  background-color: #1c1c1c;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.moviePage .card .jumbotron .my-4 {
+  margin: 0 !important;
+  background-color: gray;
+}
+.moviePage video {
+  padding: 0 !important;
+}
+.moviePage .empty {
+  background-color: gray;
+  width: 2px;
+  height: 20px;
+}
+
+.moviePage .leadContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.moviePage .wikiImage {
+  width: 10px;
+  height: 10px;
+}
+.moviePage .youtubeImage {
+  width: 10px;
+  height: 10px;
+  margin-right: 4px;
+}
+.moviePage .nav-link {
+  color: #10ddb4;
+}
