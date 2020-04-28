@@ -1,0 +1,23 @@
+.review.container-fluid {
+  background-color: #1c1c1c;
+}
+.review .card .card-header {
+  background-color: #1c1c1c;
+  color: white;
+}
+.review .card .card-header h5 {
+  color: #ffea00;
+}
+.review .card .card-body {
+  background-color: #1c1c1c;
+}
+.review .card {
+  color: white;
+}
+.review .card-footer {
+  background-color: #1c1c1c;
+  border-color: gray;
+}
+.review .fade {
+  color: #1c1c1c;
+}
