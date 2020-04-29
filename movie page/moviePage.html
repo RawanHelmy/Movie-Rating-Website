@@ -2,69 +2,92 @@
   <head>
     <link rel="Stylesheet" href="moviePage.css" />
     <title>Movie Rating</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Movie Rating Website">
-    <meta name="keywords" content="movie, html , movies">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="description" content="Movie Rating Website" />
+    <meta name="keywords" content="movie, html , movies" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Favicon -->
-    <link href="../img/star-half-outline.svg" rel="shortcut icon"/>
-	  <!-- Google font -->
-	  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
-	  <!-- Stylesheets -->
-	  <link rel="stylesheet" href="../css/bootstrap.min.css"/>
-	  <link rel="stylesheet" href="../css/font-awesome.min.css"/>
-	  <link rel="stylesheet" href="../css/magnific-popup.css"/>
-	  <link rel="stylesheet" href="../css/owl.carousel.min.css"/>
-	  <link rel="stylesheet" href="../css/animate.css"/>
-	  <link rel="stylesheet" href="../css/slicknav.min.css"/>
-	  <!-- Main Stylesheets -->
-	  <link rel="stylesheet" href="../css/style.css"/>
+    <link href="../img/star-half-outline.svg" rel="shortcut icon" />
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/magnific-popup.css" />
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css/animate.css" />
+    <link rel="stylesheet" href="../css/slicknav.min.css" />
+    <!-- Main Stylesheets -->
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body style="background-color: #000000;">
     <!--Spinner-->
     <div class="text-center" id="preloder">
       <div class="spinner-border loader" role="status">
-      <span class="sr-only">Loading...</span>
+        <span class="sr-only">Loading...</span>
       </div>
-  </div>
+    </div>
     <!--NavBar-->
-	<nav class="navbar navbar-expand-lg navbar-dark header-section">
-    <a class="navbar-brand site-logo" href="../index.html">
-        <img src="img/logo.png" alt="logo">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-  <!--Nav-->
-    <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-        <a class="nav-link" href="../index.html">HOME</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link active" href="../Movies.html">MOVIES</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="../SignIn.html">SIGN OUT</a>
-        </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-  <!--Input Group-->
-  <div class="input-group">
-    <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
-    <div class="input-group-append">
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2"><img src="../img/search-white-18dp.svg" alt="search"/></button>
-    </div>
-  </div>
-  </form>
-    </div>
-</nav>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
+    <nav class="navbar navbar-expand-lg navbar-dark header-section">
+      <a class="navbar-brand site-logo" href="../index.html">
+        <img src="../img/logo.svg" alt="logo" style="width: 40px;" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!--Nav-->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../Movies.html">MOVIES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../SignIn.html">SIGN OUT</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <!--Input Group-->
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search"
+              aria-label="Search"
+              aria-describedby="basic-addon2"
+            />
+            <div class="input-group-append">
+              <button
+                class="btn btn-outline-secondary"
+                type="button"
+                id="button-addon2"
+              >
+                <img src="../img/search-white-18dp.svg" alt="search" />
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </nav>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <div class="container-fluid moviePage" style="background-color: #000000;">
       <div class="row">
         <div class="col-md-1 col-sm-0 col-lg-2"></div>
@@ -72,15 +95,29 @@
           <div class="card">
             <div class="card-header card-header-padding">
               <div class="row">
-                <div class="col-md-6 col-sm-6 col-lg-6"> 
-                  <nav aria-label="breadcrumb" >
-                    <ol class="breadcrumb" class="header-section" style="background-color: #1c1c1c;">
-                    <li class="breadcrumb-item"><a href="../index.html" style="color: floralwhite;">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../Movies.html" style="color: floralwhite;">Movies</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Joker</li>
-                  </ol>
-                </nav>
-              </div>
+                <div class="col-md-6 col-sm-6 col-lg-6">
+                  <nav aria-label="breadcrumb">
+                    <ol
+                      class="breadcrumb"
+                      class="header-section"
+                      style="background-color: #1c1c1c;"
+                    >
+                      <li class="breadcrumb-item">
+                        <a href="../index.html" style="color: floralwhite;"
+                          >Home</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a href="../Movies.html" style="color: floralwhite;"
+                          >Movies</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item active" aria-current="page">
+                        Joker
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
                 <div class="col-md-6 col-sm-6 col-lg-6">
                   <ul class="nav" style="float: right;">
                     <li class="nav-item">
@@ -108,72 +145,23 @@
             <div class="card-body">
               <div class="jumbotron">
                 <div class="row">
-                  <h1 class="display-4 col-md-8 col-sm-8 col-lg-9" style="color: floralwhite;">
+                  <h1
+                    class="display-4 col-md-8 col-sm-8 col-lg-9"
+                    style="color: floralwhite;"
+                  >
                     Joker (2019)
                   </h1>
-                  <div
-                    class="btn-toolbar col-md-4 col-sm-4 col-lg-3"
-                    role="toolbar"
-                    aria-label="Toolbar with button groups"
-                    style="height: 40px; margin-top: 20px;"
-                  >
-                    <div
-                      class="btn-group mr-2"
-                      role="group"
-                      aria-label="First group"
-                      style="background-color: #8c8c8c;"
-                    >
-                      <button
-                        type="button"
-                        style="
-                          background-color: #8c8c8c;
-                          border-color: #666666;
-                        "
-                        class="btn btn-secondary"
-                      >
-                        1
-                      </button>
-                      <button
-                        type="button"
-                        style="
-                          background-color: #8c8c8c;
-                          border-color: #666666;
-                        "
-                        class="btn btn-secondary"
-                      >
-                        2
-                      </button>
-                      <button
-                        type="button"
-                        style="
-                          background-color: #8c8c8c;
-                          border-color: #666666;
-                        "
-                        class="btn btn-secondary"
-                      >
-                        3
-                      </button>
-                      <button
-                        type="button"
-                        style="
-                          background-color: #8c8c8c;
-                          border-color: #666666;
-                        "
-                        class="btn btn-secondary"
-                      >
-                        4
-                      </button>
-                      <button
-                        type="button"
-                        style="
-                          background-color: #8c8c8c;
-                          border-color: #666666;
-                        "
-                        class="btn btn-secondary"
-                      >
-                        5
-                      </button>
-                    </div>
+                  <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
                   </div>
                 </div>
                 <p class="lead">
@@ -199,7 +187,11 @@
                   class="btn btn-primary btn-md"
                   href="../review page/reviewPage.html"
                   role="button"
-                  style="background-color: #10ddb4; border-color: #10ddb4; color: black;"
+                  style="
+                    background-color: #10ddb4;
+                    border-color: #10ddb4;
+                    color: black;
+                  "
                   >Reviews</a
                 >
               </div>
@@ -219,7 +211,13 @@
                     />
                   </div>
                   <div class="col-md-9 col-lg-9 col-sm-9">
-                    <iframe src='https://www.youtube.com/embed/zAGVQLHvwOY?autoplay=1' frameborder='0' allowfullscreen width="100%" height="100%"></iframe>
+                    <iframe
+                      src="https://www.youtube.com/embed/zAGVQLHvwOY?autoplay=1"
+                      frameborder="0"
+                      allowfullscreen
+                      width="100%"
+                      height="100%"
+                    ></iframe>
                   </div>
                 </div>
               </div>
@@ -230,9 +228,7 @@
       <br />
       <div class="row">
         <div class="col-md-1 col-lg-2 col-sm-0"></div>
-        <div
-          class="col-md-10 col-lg-8 col-sm-12"
-        >
+        <div class="col-md-10 col-lg-8 col-sm-12">
           <div class="card">
             <div class="card-header">
               <h3 style="color: #10ddb4;">Cast</h3>
@@ -412,21 +408,24 @@
                   </div>
                 </div>
               </div>
-              <br/>
+              <br />
             </div>
           </div>
         </div>
       </div>
     </div>
-    <br/>
+    <br />
     <div class="footer-section">
       <div class="container">
         <div class="row">
           <div class="col-lg-3">
             <div class="footer-widget">
               <div class="about-widget">
-                <img src="" alt="logo">
-                <p>Top new rated movies are here for your own reviews , share us what's in your mind</p>
+                <img src="../img/logo.svg" alt="logo" style="width: 40px;" />
+                <p>
+                  Top new rated movies are here for your own reviews , share us
+                  what's in your mind
+                </p>
               </div>
             </div>
           </div>
@@ -435,9 +434,20 @@
               <h2 class="fw-title">Useful Links</h2>
               <ul>
                 <li><a href="https://www.imdb.com/?ref_=nv_home">Movies</a></li>
-                <li><a href="https://www.mirror.co.uk/3am/celebrity-news/">Celebrities</a></li>
-                <li><a href="https://www.boxofficemojo.com/year/world/?ref_=bo_nb_gr_tab">Box Office</a></li>
-                <li><a href="https://www.cinemablend.com/news.php">Latest news</a></li>
+                <li>
+                  <a href="https://www.mirror.co.uk/3am/celebrity-news/"
+                    >Celebrities</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.boxofficemojo.com/year/world/?ref_=bo_nb_gr_tab"
+                    >Box Office</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.cinemablend.com/news.php">Latest news</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -468,11 +478,13 @@
               <div class="latest-news-widget">
                 <div class="ln-item">
                   <div class="ln-text">
-                    <div class="ln-date">April 1 , 2020 </div>
+                    <div class="ln-date">April 1 , 2020</div>
                     <h6>Amazing new Movies</h6>
                     <div class="ln-metas">
                       <div class="ln-meta">By Admin</div>
-                      <div class="ln-meta">in <a href="../Movies.html">Movies</a></div>
+                      <div class="ln-meta">
+                        in <a href="../Movies.html">Movies</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -480,32 +492,58 @@
             </div>
           </div>
         </div>
-        <div class="copyright"><a href=""><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+        <div class="copyright">
+          <a href=""
+            ><p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              All rights reserved
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p></a
+          >
+        </div>
       </div>
       <div class="social-links-warp">
         <div class="container">
           <div class="social-links">
-            <a href="https://www.instagram.com"><i class="fa fa-instagram"></i><span>instagram</span></a>
-            <a href="https://www.facebook.com"><i class="fa fa-facebook"></i><span>facebook</span></a>
-            <a href="https://www.twitter.com"><i class="fa fa-twitter"></i><span>twitter</span></a>
-            <a href="https://www.youtube.com"><i class="fa fa-youtube"></i><span>youtube</span></a>
+            <a href="https://www.instagram.com"
+              ><i class="fa fa-instagram"></i><span>instagram</span></a
+            >
+            <a href="https://www.facebook.com"
+              ><i class="fa fa-facebook"></i><span>facebook</span></a
+            >
+            <a href="https://www.twitter.com"
+              ><i class="fa fa-twitter"></i><span>twitter</span></a
+            >
+            <a href="https://www.youtube.com"
+              ><i class="fa fa-youtube"></i><span>youtube</span></a
+            >
           </div>
         </div>
       </div>
     </div>
     <!--====== Javascripts & Jquery ======-->
-	  <script src="../js/jquery-3.2.1.min.js"></script>
-	  <script src="../js/bootstrap.min.js"></script>
-	  <script src="../js/jquery.slicknav.js"></script>
-	  <script src="../js/owl.carousel.min.js"></script>
-	  <script src="../js/circle-progress.min.js"></script>
-	  <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.slicknav.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/circle-progress.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
     <script src="../js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	  <script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script>
       $(function () {
         $('[data-toggle="popover"]').popover();
       });
