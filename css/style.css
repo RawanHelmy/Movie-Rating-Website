@@ -599,8 +599,8 @@ Header section
 }
 
 .latest-news-widget .ln-item img {
-	width: 85px;
-	height: 85px;
+	width: 150px;
+	height: 150px;
 	float: left;
 	margin-right: 27px;
 }
