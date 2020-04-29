@@ -19,7 +19,13 @@
         <!-- Main Stylesheets -->
         <link rel="stylesheet" href="css/style.css"/>
     </head>
-    <body style="background-color: #1c1c1c;">
+	<body style="background-color: #1c1c1c;">
+		<!--Spinner-->
+        <div class="text-center" id="preloder">
+            <div class="spinner-border loader" role="status">
+            <span class="sr-only">Loading...</span>
+            </div>
+        </div>
         <!--NavBar-->
 	<nav class="navbar navbar-expand-lg navbar-dark header-section" style="z-index: 1;">
         <a class="navbar-brand site-logo" href="index.html">
@@ -35,7 +41,7 @@
             <a class="nav-link" href="index.html">HOME</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">MOVIES</a>
+            <a class="nav-link active" href="#">MOVIES</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="SignIn.html">SIGN OUT</a>
@@ -57,82 +63,49 @@
     <br/>
     <br/>
     <br/>
-	<nav aria-label="breadcrumb" >
-		<ol class="breadcrumb" class="header-section" style="background-color: #1c1c1c;">
-		<li class="breadcrumb-item"><a href="index.html" style="color: floralwhite;">Home</a></li>
-		<li class="breadcrumb-item active" aria-current="page">Movies</li>
-	</ol>
-	</nav>
     <section class="characters-boxes-section">
 		<div class="container">
 			<div class="game-title">
-				<img src="img/game-characters/title-icon.png" alt="">
-				<h2>The Characters</h2>
+				<!--BreadCrumbs-->
+				<nav aria-label="breadcrumb" >
+					<ol class="breadcrumb" class="header-section" style="background-color: #1c1c1c;">
+					<li class="breadcrumb-item"><a href="index.html" style="color: floralwhite;">Home</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Movies</li>
+				</ol>
+				</nav>
+				<h2>Movies</h2>
 			</div>
 			<div class="row">
+				<!--Cards-->
 				<div class="col-lg-3 col-sm-6">
 					<div class="characters-box">
-						<img src="img/characters-boxes/1.jpg" alt="">
-						<h4>The Judge</h4>
-						<p>Vestibulum malesuada aliquet libero viverra cursus. Aliquam erat volut-pat. Morbi id dictum quam, ut com-modo lorem.</p>
+						<img src="img/Movies/download (4).jpeg" alt="">
+						<h4>Joker</h4>
+						<p></p>
+						<a href="./movie page/moviePage.html" class="rm">See More</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="characters-box">
+						<img src="img/Movies/81jdGmsfsxL._AC_SY741_.jpg" alt="">
+						<h4>Harley Quinn: Birds of Prey</h4>
+						<p></p>
 						<a href="#" class="rm">See More</a>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6">
 					<div class="characters-box">
-						<img src="img/characters-boxes/2.jpg" alt="">
-						<h4>The Soldier</h4>
-						<p>Aliquam erat volutpat. Morbi id dictum quam, ut commodo lorem. In at nisi nec arcu porttitor aliquet vitae at dui. Sed sollicitudin.</p>
+						<img src="img/Movies/download (1).jpeg" alt="">
+						<h4>Top Gun: Maverick</h4>
+						<p></p>
 						<a href="#" class="rm">See More</a>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6">
 					<div class="characters-box">
-						<img src="img/characters-boxes/3.jpg" alt="">
-						<h4>The Green Witch</h4>
-						<p>Vestibulum malesuada aliquet libero viverra cursus. Aliquam erat volut-pat. Morbi id dictum quam, ut com-modo lorem.</p>
-						<a href="#" class="rm">See More</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="characters-box">
-						<img src="img/characters-boxes/4.jpg" alt="">
-						<h4>The Robot</h4>
-						<p>Aliquam erat volutpat. Morbi id dictum quam, ut commodo lorem. In at nisi nec arcu porttitor aliquet vitae at dui. Sed sollicitudin.</p>
-						<a href="#" class="rm">See More</a>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-3 col-sm-6">
-					<div class="characters-box">
-						<img src="img/characters-boxes/1.jpg" alt="">
-						<h4>The Judge</h4>
-						<p>Vestibulum malesuada aliquet libero viverra cursus. Aliquam erat volut-pat. Morbi id dictum quam, ut com-modo lorem.</p>
-						<a href="#" class="rm">See More</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="characters-box">
-						<img src="img/characters-boxes/2.jpg" alt="">
-						<h4>The Soldier</h4>
-						<p>Aliquam erat volutpat. Morbi id dictum quam, ut commodo lorem. In at nisi nec arcu porttitor aliquet vitae at dui. Sed sollicitudin.</p>
-						<a href="#" class="rm">See More</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="characters-box">
-						<img src="img/characters-boxes/3.jpg" alt="">
-						<h4>The Green Witch</h4>
-						<p>Vestibulum malesuada aliquet libero viverra cursus. Aliquam erat volut-pat. Morbi id dictum quam, ut com-modo lorem.</p>
-						<a href="#" class="rm">See More</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="characters-box">
-						<img src="img/characters-boxes/4.jpg" alt="">
-						<h4>The Robot</h4>
-						<p>Aliquam erat volutpat. Morbi id dictum quam, ut commodo lorem. In at nisi nec arcu porttitor aliquet vitae at dui. Sed sollicitudin.</p>
+						<img src="img/Movies/download (2).jpeg" alt="">
+						<h4>A Quiet Place Part 2</h4>
+						<p></p>
 						<a href="#" class="rm">See More</a>
 					</div>
 				</div>
@@ -140,58 +113,88 @@
 			<div class="row">
 				<div class="col-lg-3 col-sm-6">
 					<div class="characters-box">
-						<img src="img/characters-boxes/1.jpg" alt="">
-						<h4>The Judge</h4>
-						<p>Vestibulum malesuada aliquet libero viverra cursus. Aliquam erat volut-pat. Morbi id dictum quam, ut com-modo lorem.</p>
+						<img src="img/Movies/220px-Tenet_movie_poster.webp" alt="">
+						<h4>Tenet</h4>
+						<p></p>
 						<a href="#" class="rm">See More</a>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6">
 					<div class="characters-box">
-						<img src="img/characters-boxes/2.jpg" alt="">
-						<h4>The Soldier</h4>
-						<p>Aliquam erat volutpat. Morbi id dictum quam, ut commodo lorem. In at nisi nec arcu porttitor aliquet vitae at dui. Sed sollicitudin.</p>
+						<img src="img/Movies/download (3).jpeg" alt="">
+						<h4>Bad Boys For Life</h4>
+						<p></p>
 						<a href="#" class="rm">See More</a>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6">
 					<div class="characters-box">
-						<img src="img/characters-boxes/3.jpg" alt="">
-						<h4>The Green Witch</h4>
-						<p>Vestibulum malesuada aliquet libero viverra cursus. Aliquam erat volut-pat. Morbi id dictum quam, ut com-modo lorem.</p>
+						<img src="img/Movies/download (5).jpeg" alt="">
+						<h4>Dolittle</h4>
+						<p></p>
 						<a href="#" class="rm">See More</a>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6">
 					<div class="characters-box">
-						<img src="img/characters-boxes/4.jpg" alt="">
-						<h4>The Robot</h4>
-						<p>Aliquam erat volutpat. Morbi id dictum quam, ut commodo lorem. In at nisi nec arcu porttitor aliquet vitae at dui. Sed sollicitudin.</p>
+						<img src="img/Movies/download.jpeg" alt="">
+						<h4>No Time To Die</h4>
+						<p></p>
+						<a href="#" class="rm">See More</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-sm-6">
+					<div class="characters-box">
+						<img src="img/Movies/download1.jpeg" alt="">
+						<h4>Mulan</h4>
+						<p></p>
+						<a href="#" class="rm">See More</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="characters-box">
+						<img src="img/Movies/MV5BZGRlNTY3NGYtM2YzZS00N2YyLTg0ZDYtNmY2ZDg2NDM3N2JlXkEyXkFqcGdeQXVyNTI4MzE4MDU@._V1_.jpg" alt="">
+						<h4>Black Widow</h4>
+						<p></p>
+						<a href="#" class="rm">See More</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="characters-box">
+						<img src="img/Movies/c.jpg" alt="">
+						<h4>Bloodshot</h4>
+						<p></p>
+						<a href="#" class="rm">See More</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="characters-box">
+						<img src="img/Movies/download (6).jpeg" alt="">
+						<h4>Free Guy</h4>
+						<p></p>
 						<a href="#" class="rm">See More</a>
 					</div>
 				</div>
 			</div>
 		</div>
+		<br/>
+		<br/>
+		<!--Pagination-->
+		<nav aria-label="Page navigation example">
+			<ul class="pagination justify-content-center navbar-dark">
+			<li class="page-item disabled" >
+				<a class="page-link" href="#" tabindex="-1" aria-disabled="true" style="background-color: #1c1c1c; border-color:#1c1c1c ;" >Previous</a>
+			</li>
+			<li class="page-item active"><a class="page-link" href="#" style="background-color: #10ddb4; border-color:#10ddb4 ; color: floralwhite;">1</a></li>
+			<li class="page-item"><a class="page-link" href="Movies2.html" style="background-color: #1c1c1c; border-color:#1c1c1c ; color: floralwhite;">2</a></li>
+			<li class="page-item">
+				<a class="page-link" href="Movies2.html" style="background-color: #1c1c1c; border-color:#1c1c1c ; color: floralwhite;">Next</a>
+			</li>
+			</ul>
+		</nav>
 	</section>
-	<nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
-        <li class="page-item disabled">
-            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-        </li>
-        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item">
-            <a class="page-link" href="#">Next</a>
-        </li>
-        </ul>
-    </nav>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
     <div class="footer-section">
 		<div class="container">
 			<div class="row">
@@ -246,7 +249,6 @@
 									<div class="ln-metas">
 										<div class="ln-meta">By Admin</div>
 										<div class="ln-meta">in <a href="Movies.html">Movies</a></div>
-										<div class="ln-meta">3 Comments</div>
 									</div>
 								</div>
 							</div>
@@ -278,9 +280,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="js/circle-progress.min.js"></script>
         <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="js/main.js"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script>
             $('.carousel').carousel({
                 interval: 2000
