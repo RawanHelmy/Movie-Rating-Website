@@ -1,38 +1,101 @@
 <html>
   <head>
-    <link rel="Stylesheet" href="reviewPage.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <div class="container-fluid review">
+    <title>Movie Rating</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Movie Rating Website">
+    <meta name="keywords" content="movie, html , movies">
+    <link href="img/star-half-outline.svg" rel="shortcut icon"/>
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->        
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../css/magnific-popup.css"/>
+    <link rel="stylesheet" href="../css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="../css/animate.css"/>
+    <link rel="stylesheet" href="../css/slicknav.min.css"/>
+    <!-- Main Stylesheets -->
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="reviewPage.css"/>
+</head>
+  <body style="background-color: #000000;">
+    <!--Spinner-->
+    <div class="text-center" id="preloder">
+      <div class="spinner-border loader" role="status">
+      <span class="sr-only">Loading...</span>
+      </div>
+  </div>
+  <!--NavBar-->
+<nav class="navbar navbar-expand-lg navbar-dark header-section" style="z-index: 1;">
+  <a class="navbar-brand site-logo" href="index.html">
+      <img src="" alt="logo">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<!--Nav-->
+  <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+      <a class="nav-link" href="../index.html">HOME</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link active" href="../Movies.html">MOVIES</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="../SignIn.html">SIGN OUT</a>
+      </li>
+  </ul>
+  <form class="form-inline my-2 my-lg-0">
+<!--Input Group-->
+<div class="input-group">
+  <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><img src="../img/search-white-18dp.svg" alt="search"/></button>
+  </div>
+</div>
+</form>
+  </div>
+</nav>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+    <div class="container-fluid review" style="background-color: #000000;">
       <div class="col-md-12">
+        <nav aria-label="breadcrumb" >
+          <ol class="breadcrumb" class="header-section" style="background-color: #1c1c1c;">
+          <li class="breadcrumb-item"><a href="../index.html" style="color: floralwhite;">Home</a></li>
+          <li class="breadcrumb-item"><a href="../Movies.html" style="color: floralwhite;">Movies</a></li>
+          <li class="breadcrumb-item"><a href="../movie page/moviePage.html" style="color: floralwhite;">Joker</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Reviews</li>
+        </ol>
+      </nav>
         <div class="card">
           <div class="card-header">
             <div class="media">
               <img
                 src="poster.jpg"
-                class="mr-3"
+                class="mr-4"
                 style="width: 100; height: 150px;"
               />
               <div class="media-body">
-                <h5 class="mt-0">Joker</h5>
+                <h4 class="mt-0">Joker</h4>
                 Reviews
-                <div class="progress" style="width: 10%;">
+                <div class="progress" style="width: 20%;">
                   <div
                     class="progress-bar bg-warning"
                     role="progressbar"
                     style="width: 75%;"
-                    aria-valuenow="75"
+                    aria-valuenow="80"
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
                 </div>
-                3.75/5
+                4.87/5
               </div>
             </div>
           </div>
@@ -76,7 +139,6 @@
               <div class="media-body">
                 <h5 class="mt-0">Alex</h5>
                 Went for a second time to watch
-
                 <div class="media mt-3">
                   <a class="mr-3" href="#">
                     <img
@@ -111,7 +173,6 @@
                 class="mr-3"
                 style="width: 40px; height: 60px;"
               />
-
               <div class="media-body">
                 <h5 class="mt-0">Ahmed</h5>
                 Joaquin 'OSCAR', Joker = best Dark suspense thriller ... Darker
@@ -125,7 +186,6 @@
                 class="mr-3"
                 style="width: 40px; height: 60px;"
               />
-
               <div class="media-body">
                 <h5 class="mt-0">Aman</h5>
                 Perfect in every aspect.
@@ -148,14 +208,13 @@
                   class="btn btn-primary"
                   data-toggle="modal"
                   data-target="#exampleModal"
-                  style="background-color: #10ddb4; border-color: #10ddb4;"
+                  style="background-color: #10ddb4; border-color: #10ddb4; color: black;"
                   onclick="addComment()"
                 >
                   Send
                 </button>
               </div>
             </div>
-
             <div
               class="modal fade"
               id="exampleModal"
@@ -196,21 +255,98 @@
         </div>
       </div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
+    <br/>
+    <br/>
+    <div class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="footer-widget">
+              <div class="about-widget">
+                <img src="" alt="logo">
+                <p>Top new rated movies are here for your own reviews , share us what's in your mind</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-6">
+            <div class="footer-widget">
+              <h2 class="fw-title">Useful Links</h2>
+              <ul>
+                <li><a href="https://www.imdb.com/?ref_=nv_home">Movies</a></li>
+                <li><a href="https://www.mirror.co.uk/3am/celebrity-news/">Celebrities</a></li>
+                <li><a href="https://www.boxofficemojo.com/year/world/?ref_=bo_nb_gr_tab">Box Office</a></li>
+                <li><a href="https://www.cinemablend.com/news.php">Latest news</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-6">
+            <div class="footer-widget">
+              <h2 class="fw-title">Services</h2>
+              <ul>
+                <li><a href="">Services</a></li>
+                <li><a href="">Become a writer</a></li>
+                <li><a href="">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-6">
+            <div class="footer-widget">
+              <h2 class="fw-title">Careers</h2>
+              <ul>
+                <li><a href="">Donate</a></li>
+                <li><a href="">Subscriptions</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Our team</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-widget fw-latest-post">
+              <h2 class="fw-title">Useful Links</h2>
+              <div class="latest-news-widget">
+                <div class="ln-item">
+                  <div class="ln-text">
+                    <div class="ln-date">April 1 , 2020 </div>
+                    <h6>Amazing new Movies</h6>
+                    <div class="ln-metas">
+                      <div class="ln-meta">By Admin</div>
+                      <div class="ln-meta">in <a href="../Movies.html">Movies</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright"><a href=""><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+      </div>
+      <div class="social-links-warp">
+        <div class="container">
+          <div class="social-links">
+            <a href="https://www.instagram.com"><i class="fa fa-instagram"></i><span>instagram</span></a>
+            <a href="https://www.facebook.com"><i class="fa fa-facebook"></i><span>facebook</span></a>
+            <a href="https://www.twitter.com"><i class="fa fa-twitter"></i><span>twitter</span></a>
+            <a href="https://www.youtube.com"><i class="fa fa-youtube"></i><span>youtube</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- Footer section end -->
+          <!--====== Javascripts & Jquery ======-->
+          <script src="../js/jquery-3.2.1.min.js"></script>
+          <script src="../js/bootstrap.min.js"></script>
+          <script src="../js/jquery.slicknav.js"></script>
+          <script src="../js/owl.carousel.min.js"></script>
+          <script src="../js/circle-progress.min.js"></script>
+          <script src="../js/jquery.magnific-popup.min.js"></script>
+          <script src="../js/main.js"></script>
+          <script>
+              $('.carousel').carousel({
+                  interval: 2000
+                  })
+          </script>
     <script>
       $("#myModal").on("shown.bs.modal", function () {
         $("#myInput").trigger("focus");
